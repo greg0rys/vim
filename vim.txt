@@ -1,0 +1,51 @@
+
+
+"set number will number all the lines on the display for me"
+set number
+"color theme italics"
+let g:jellybeans_use_term_italics = 1
+"syntax on will enable syntax highlighting for writing programs / scripts"
+syntax on
+"show mode will show me what mode I am currently editing"
+set showmode
+"set flash will cause vim to flash instead of making its defualt chime noise"
+set flash "we don't have support for this feature in WSL versions of Linux"
+
+"Highlight the cursor line underneath the cursor horizontially"
+set cursorline
+
+"Highlight cursor line underneath vertically; with both of these applied the cursor will be highlighted as a cross"
+set cursorcolumn
+"set the tab width to 4 spaces"
+set tabstop=4
+"set the indention options for files like code files etc"
+set shiftwidth=4
+set autoindent
+set smartindent
+"set lines to 79 characters as C++ standard"
+set wrapmargin=79
+set wrap
+"set the text width to 79 chars and then make it wrap per C++ style"
+set textwidth=79
+"show where the 79th character will apear on the line
+set colorcolumn=79
+"make lines break when they reach the text width"
+set linebreak
+"While searching a file highlight matches"
+set incsearch
+set hls
+"Enable auto completion menu after tab is pressed when entering a command"
+set wildmenu
+
+"use utf-8 encoding for nerdfonts"
+set encoding=UTF-8
+  "Plugins use a special syntax please see ~./vimnotes/plugins.md"
+  " for any plugins that throws an error when trying to use"
+  " not an enditor command its due to plugins .vim file not beings saved with"
+	"unix line feeds. to fix it cd into .vim/plugged/nameofpluginsfolder"
+	"then find ever .vim file in all directories and sub directories"
+	"in each dir that has .vim files run the command dos2unix *.vim it will"
+	"convert all the .vim files to have unix line feed endings and then no
+	"more"
+	"errors"
+  "Set nerdtree to toggle with F2"
